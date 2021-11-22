@@ -1,0 +1,136 @@
+body {
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: -100 0;
+  background-color: hsl(225, 100%, 94%);
+  font-family: 'Red Hat Display', sans-serif;
+}
+.container {
+  width: 85vw;
+  background-color: hsl(225, 100%, 100%);
+  margin: 50px auto;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.container .hero {
+  background-image: url(images/illustration-hero.svg);
+  width: 100vw;
+  height: 30vh;
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .hero1 {
+  width: 35vw;
+  margin: auto;
+  text-align: center;
+}
+.container .hero1 h3, .container .hero1 p {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .hero1 h3 {
+  font-size: 3em;
+  font-weight: 900;
+}
+.container .hero1 p {
+  font-size: 1em;
+  font-weight: 500;
+}
+.container .hero2 {
+  width: 60vw;
+  height: 4vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  padding: 20px;
+  border-radius: 25px;
+  margin: auto;
+}
+.container .hero2 .text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: -165px;
+}
+.container .hero2 .text h2 {
+  font-weight: 900;
+}
+.container .hero2 .text p {
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+.container .hero2 a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  font-size: 1.3em;
+}
+.container .hero3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+}
+.container .hero3 #buy {
+  width: 60vw;
+  height: 5vh;
+  margin: 10px;
+  border-radius: 35px;
+  border: 0;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  box-shadow: -5px 10px 15px 10px hsl(225, 100%, 94%);
+  font-weight: 900;
+  font-size: 1.5em;
+}
+.container .hero3 #cancel {
+  width: 60vw;
+  height: 5vh;
+  margin: 10px;
+  border-radius: 35px;
+  background-color: hsl(225, 100%, 100%);
+  color: hsl(224, 23%, 55%);
+  border: 0;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    border-radius: 20px;
+  }
+  .container .hero1 {
+    margin-top: -20px;
+    width: 85vw;
+    text-align: center;
+  }
+  .container .hero1 h3 {
+    font-size: 1.5em;
+  }
+  .container .hero1 p {
+    margin-top: -25px;
+  }
+  .container .hero2 {
+    margin-top: -20px;
+    height: 5vh;
+    justify-content: space-between;
+  }
+  .container .hero2 .text {
+    margin-left: -10px;
+  }
+  .container .hero2 a {
+    font-size: 1em;
+    font-weight: 700;
+    margin-right: -10px;
+  }
+  .container .hero3 {
+    margin: 10px auto;
+  }
+  .container .hero3 #buy, .container .hero3 #cancel {
+    font-size: 1em;
+    height: 8.5vh;
+    border-radius: 13px;
+    font-weight: 700;
+  }
+}
